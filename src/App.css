@@ -56,3 +56,6 @@ button {
     margin-right: auto;
     max-width: 1200px;
 }
+.section {
+    padding: 6rem 0 2rem;
+}
