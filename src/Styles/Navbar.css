@@ -9,11 +9,12 @@
     justify-content: space-between;
     padding: 28px;
     transition: all .50s ease;
+    background-color: var(--background-color);
 }
 
 .nav-logo {
     color: var(--secondary-color) !important;
-    font-family: var(--logo-ff);
+    font-family: var(--title-ff);
     font-weight: 600;
     font-size: var(--logo-fs);
 }

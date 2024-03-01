@@ -62,7 +62,7 @@
 }
 
 .login-form h2 {
-    font-family: var(--links-ff);
+    font-family: var(--title-ff);
     color: var(--background-color);
     font-weight: normal;
     text-align: center;
@@ -165,9 +165,17 @@
     text-decoration: none;
 }
 
-@media (max-width: 1200px) {
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--links-fs);
+    font-family: var(--links-ff);
+}
+
+@media (max-width: 1024px) {
     .login-page {
-        margin: 20px
+        margin: 10px
     }
 
 }

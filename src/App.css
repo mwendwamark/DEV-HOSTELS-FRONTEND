@@ -3,7 +3,7 @@
 :root {
     /* colors */
     --background-color: #fff;
-    --text-color: #030407;
+    --text-color: #212327;
     --secondary-color: #FC6736;
     --links-color: #030407;
     --nav-links-color: #3e404c;
@@ -17,7 +17,7 @@
     --nav-links-fs: 14px;
 
     /* Font families */
-    --title-ff: Archivo, "sans-serif";
+    --title-ff: Recoleta, "open-sans";
     --subtitle-ff: Roboto, "poppins";
     --text-ff: Inter, "poppins";
     --links-ff: Poppins, "poppins";
@@ -56,6 +56,7 @@ button {
     margin-right: auto;
     max-width: 1200px;
 }
+
 .section {
     padding: 6rem 0 2rem;
 }

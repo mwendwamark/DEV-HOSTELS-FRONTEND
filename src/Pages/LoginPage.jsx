@@ -92,6 +92,12 @@ const LoginPage = () => {
                   autoComplete="current-password"
                   required
                 />
+
+                <div className="error-message">
+                  {errors.map((e, index) => (
+                    <p key={index}>{e}</p>
+                  ))}
+                </div>
               </div>
               <div className="show-password-section">
                 <div className="show-password-contents">
@@ -115,7 +121,7 @@ const LoginPage = () => {
 
               <div className="login-btns">
                 <div className="no-google-btn">
-                  <button>Login</button>
+                  <button type="submit">Login</button>
                 </div>
 
                 <div className="google-btn">
