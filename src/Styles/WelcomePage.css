@@ -1,0 +1,104 @@
+.introduction-section-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.introduction-section-contents-header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.introduction-section-contents-header h1 {
+    font-size: var(--title-fs);
+    font-family: var(--title-ff);
+    font-weight: var(--title-fw);
+    color: var(--nav-links-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-bottom: 0px; */
+}
+
+.introduction-section-contents-header h1 span {
+    font-family: var(--title-ff);
+    font-weight: 300;
+    font-size: var(--logo-fs);
+    margin-top: 20px;
+}
+
+.introduction-section-contents-header p {
+    font-size: var(--text-fs);
+    line-height: 22px;
+    font-family: var(--text-ff);
+    font-weight: 200;
+    margin-top: 0px
+}
+
+.introduction-section-contents-header p span {
+    font-weight: var(--title-fw);
+}
+
+.introduction-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introduction-info div h2 {
+    color: var(--secondary-color);
+    font-family: var(--title-ff);
+}
+
+.hostel-count,
+.student-count,
+.hosts-count {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-info h2 {
+    position: relative;
+    display: inline-block;
+}
+
+
+.introduction-info div h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: lightseagreen;
+}
+
+
+
+.introduction-section-image {
+    width: 45%;
+    margin-top: 10px;
+}
+
+
+.introduction-section-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(10px 7px 10px var(--secondary-color));
+}
+
+.what-we-offer {
+    background-color: var(--nav-links-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    height: 900px;
+    color: var(--background-color);
+}

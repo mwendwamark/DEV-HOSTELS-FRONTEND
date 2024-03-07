@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Archivo:wght@400;600;700;800&family=Inter:wght@200;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Archivo:wght@600;700;800&family=Inter:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:wght@300;400;500;700&display=swap');
 :root {
     /* colors */
-    --background-color: #fff;
+    --background-color: #FFFAFA;
     --text-color: #212327;
     --secondary-color: #FC6736;
     --links-color: #030407;
@@ -18,7 +17,7 @@
 
     /* Font families */
     --title-ff: Recoleta, "open-sans";
-    --subtitle-ff: Roboto, "poppins";
+    --sub-title-ff: Playfair Display, "poppins";
     --text-ff: Inter, "poppins";
     --links-ff: Poppins, "poppins";
     --nav-links-ff: Archivo, "poppins";
