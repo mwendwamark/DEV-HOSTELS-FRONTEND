@@ -88,7 +88,7 @@
 
 .introduction-section-image img {
     width: 100%;
-    height: 550px;
+    height: 650px;
     object-fit: cover;
     border-radius: 10px;
     filter: drop-shadow(10px 7px 10px var(--secondary-color));
@@ -98,7 +98,193 @@
     background-color: var(--nav-links-color);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
-    height: 900px;
+    margin-top: 250px;
     color: var(--background-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.what-we-offer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.what-we-offer-header h2 {
+    font-family: var(--title-ff);
+    font-size: var(--title-fs);
+    font-weight: var(--title-fw);
+    margin-bottom: 0px;
+}
+
+.what-we-offer-header h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.what-we-offer-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--secondary-color);
+}
+
+.accomodation-options-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.accomodation-slider {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.accomodation-slider img {
+    width: 550px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #007bff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0056b3;
+}
+
+.accomodation-section-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+
+.checkmark-icon {
+    font-size: var(--logo-fs);
+}
+
+.accomodation-section-contents h2 {
+    background: linear-gradient(45deg, var(--secondary-color), var(--background-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--title-ff);
+}
+
+.accomodation-section-contents h3 {
+    font-family: var(---ff);
+    font-size: var(--logo-fs);
+    font-weight: var(--title-fw);
+    position: relative;
+    display: inline-block;
+}
+
+.accomodation-section-contents p {
+    font-family: var(--text-ff);
+    font-size: var(--text-fs);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.explore-more-rooms-button {
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: var(--subtitle-fw);
+    border-radius: 2px;
+    transition: .5s linear;
+    margin-top: 20px;
+}
+
+.available-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.available-features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--title-ff);
+    font-size: var(--sub-title-fs);
+    color: var(--secondary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.bottom-feature-list,
+.top-feature-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 222;
+    background: rgba(225, 225, 225, 0.1);
+    padding: 40px;
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    border-radius: 10px;
+    line-height: 20px;
+    width: 380px;
+    justify-content: space-between;
+}
+
+.feature-icon {
+    color: var(--secondary-color);
+    font-size: var(--title-fs);
+}
+
+.feature-item p {
+    color: var(--background-color);
+    font-family: var(--nav-links-ff);
+    font-size: var(--logo-fs);
+}
+.feature-item span {
+    font-family: var(--links-ff);
+    font-size: var(--links-fs);
+}
+
+.cta-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: var(--subtitle-fw);
+    border-radius: 2px;
+    margin-bottom: 30px;
+    transition: .5s linear;
+}
+.cta-button:hover, 
+.explore-more-rooms-button:hover{
+ filter: grayscale(40%);
 }

@@ -35,11 +35,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: var(--background-color);
+}
 a {
     text-decoration: none;
 }
-
+li,
 ul {
     list-style: none;
 }

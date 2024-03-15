@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 // react icons
 import { GiBunkBeds } from "react-icons/gi";
@@ -7,7 +7,21 @@ import { MdMenu, MdClose } from "react-icons/md";
 import "../Styles/Navbar.css";
 
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,7 +29,11 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="navbar-header">
+      <header
+        className={`navbar-header ${
+          scrollPosition > 80 ? "scroll-header" : ""
+        }`}
+      >
         <NavLink to="/" className="nav-logo">
           <GiBunkBeds className="logo-icon" />
           <span> Dev~</span> hostels
