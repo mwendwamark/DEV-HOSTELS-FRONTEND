@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* margin-bottom: 0px; */
 }
 
 .introduction-section-contents-header h1 span {
@@ -48,6 +47,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
 }
 
 .introduction-info div h2 {
@@ -265,6 +265,7 @@
     font-family: var(--nav-links-ff);
     font-size: var(--logo-fs);
 }
+
 .feature-item span {
     font-family: var(--links-ff);
     font-size: var(--links-fs);
@@ -284,7 +285,90 @@
     margin-bottom: 30px;
     transition: .5s linear;
 }
-.cta-button:hover, 
-.explore-more-rooms-button:hover{
- filter: grayscale(40%);
+
+.cta-button:hover,
+.explore-more-rooms-button:hover {
+    filter: grayscale(40%);
+}
+
+@media (max-width:1024px) {
+
+    .feature-item {
+        width: 30%;
+    }
+
+    .accomodation-slider {
+        max-width: 50%;
+    }
+}
+
+/* mobile phone view */
+@media (max-width: 768px) {
+    .introduction-section-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction-section-contents-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .introduction-section-contents-header h1 {
+        font-size: var(--sub-title-fs);
+    }
+
+    .introduction-section-contents-header h1 span {
+        margin-bottom: 40px;
+    }
+
+    .introduction-section-image {
+        width: 100%;
+        margin-top: 2rem;
+        object-fit: cover;
+    }
+
+    .what-we-offer {
+        margin-top: 80px;
+    }
+
+    .what-we-offer-header {
+        padding: 12px;
+    }
+
+    .what-we-offer-header h2 {
+        font-size: 30px;
+    }
+
+
+    .accomodation-options-section {
+        flex-direction: column;
+    }
+
+
+    .accomodation-slider {
+        max-width: none;
+        padding: 10px;
+    }
+
+    .accomodation-slider img {
+        width: 100%;
+        height: 420px;
+        max-width: 100%;
+    }
+
+    .available-features h2 {
+        font-size: 28px;
+    }
+
+    .bottom-feature-list,
+    .top-feature-list {
+        margin-bottom: 0px;
+    }
+
+    .feature-item {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
 }
