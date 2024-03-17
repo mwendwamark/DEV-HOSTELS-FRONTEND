@@ -93,11 +93,13 @@ a.active {
     }
 
     .nav-logo {
-        font-size: var(--links-fs);
+        font-size: var(--logo-fs);
     }
 }
 
 @media (max-width: 800px) {
+
+
     .nav-toggle {
         display: block;
     }
@@ -134,12 +136,14 @@ a.active {
 }
 
 @media (max-width: 425px) {
+
+
     .nav-logo {
-        font-size: var(--links-fs);
+        font-size: var(--logo-fs);
     }
 
     .auth-link {
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 10px;
     }
 

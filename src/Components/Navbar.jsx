@@ -8,7 +8,7 @@ import "../Styles/Navbar.css";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
