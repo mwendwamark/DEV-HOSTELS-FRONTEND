@@ -82,7 +82,7 @@ const WelcomePage = () => {
      ScrollReveal().reveal(".feature-item", {
        delay: 500,
        origin: "bottom",
-      //  distance: "200px", // Adjust as needed
+       distance: "200px", // Adjust as needed
        interval: 100, // Interval between each item
      });
   }, []);
