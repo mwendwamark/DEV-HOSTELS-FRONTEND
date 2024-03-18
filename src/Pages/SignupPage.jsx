@@ -3,6 +3,7 @@ import "../Styles/SignupPage.css";
 import signupImage from "../assets/signup-image.jpg";
 // icons
 import { FcGoogle } from "react-icons/fc";
+import { NavLink } from "react-router-dom";
 
 const SignupPage = () => {
   const [first_name, setFirstName] = useState("");
@@ -200,7 +201,7 @@ const SignupPage = () => {
 
               <div className="link-to-login">
                 <p>
-                  Have an account? <a href="/login">Login</a>
+                  Have an account? <NavLink href="/login">Login</NavLink>
                 </p>
               </div>
 
