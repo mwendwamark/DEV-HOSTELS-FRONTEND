@@ -201,7 +201,7 @@ const SignupPage = () => {
 
               <div className="link-to-login">
                 <p>
-                  Have an account? <NavLink href="/login">Login</NavLink>
+                  Have an account? <NavLink to="/login">Login</NavLink>
                 </p>
               </div>
 
